@@ -1,0 +1,17 @@
+@import "../../../mixin.scss";
+
+.grid-container {
+  width: 100%;
+  display: flex;
+  align-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  //   align-items: center;
+  column-gap: 1rem;
+  row-gap: 2rem;
+
+  @include desktop {
+    height: calc(100% - 32px);
+  }
+}
