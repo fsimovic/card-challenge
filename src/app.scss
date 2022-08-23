@@ -1,0 +1,10 @@
+@import "./mixin.scss";
+
+.app {
+  margin: 10px 10px 0px;
+  padding: 20px 20px 0px;
+
+  @include desktop {
+    height: calc(100vh - 60px);
+  }
+}
