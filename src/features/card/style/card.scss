@@ -1,0 +1,69 @@
+@import "../../../mixin.scss";
+
+.card-container {
+  background-color: $fg-white;
+  max-width: 420px;
+  height: auto;
+  width: 100%;
+  border-radius: 14px;
+  box-shadow: 0 10px 30px $fg-shadow;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  @include tablet {
+    width: 40%;
+    max-width: unset;
+  }
+  @include desktop {
+    width: 20%;
+    max-width: unset;
+  }
+}
+
+.card-header {
+  background-color: $fg-primary;
+  text-align: center;
+  border-top-left-radius: 14px;
+  border-top-right-radius: 14px;
+}
+
+.avatar {
+  width: 30%;
+  border-radius: 50%;
+  margin: 15px auto auto;
+  border: 2px solid $fg-white;
+}
+
+.subscriber-name {
+  margin-top: 5px;
+  padding-bottom: 15px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.card-body {
+  // padding-top: 10px;
+  text-align: center;
+}
+
+.card-body-text {
+  margin: 10px auto;
+}
+
+.card-footer {
+  text-align: center;
+}
+
+.card-footer-button {
+  font-size: 14px;
+  border-radius: unset;
+  border: unset;
+  background-color: unset;
+  cursor: pointer;
+  height: 50px;
+  width: 100px;
+  &:hover {
+    color: $fg-primary;
+  }
+}
